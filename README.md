@@ -1,23 +1,23 @@
 # 💊 Pharma Sales Forecasting & Analytics  
 
-Proyecto de Data Science aplicado al sector farmacéutico.  
-Analizamos y predecimos ventas de medicamentos usando modelos de Machine Learning y series temporales, con visualizaciones interactivas en Streamlit.  
+A Data Science project applied to the pharmaceutical sector.  
+We analyze and predict medication sales using Machine Learning models and time series forecasting, featuring interactive visualizations in Streamlit.  
 
 ---
 
-## 📂 Estructura del repositorio
+## 📂 Repository Structure
 
 ```plaintext
 ├── data/
-│   ├── raw/              # Datos originales (Kaggle)
-│   ├── processed/        # Datos procesados
-│   ├── train/            # Train set
-│   └── test/             # Test set
+│   ├── raw/              # Original data (Kaggle)
+│   ├── processed/        # Processed data
+│   ├── train/            # Training set
+│   └── test/             # Testing set
 ├── docs/
-│   ├── artifacts/        # KPIs, rankings, métricas
-│   ├── plots/            # Gráficas generadas
-│   ├── negocio.pptx      # Presentación para negocio
-│   └── ds.pptx           # Presentación técnica
+│   ├── artifacts/        # KPIs, rankings, metrics
+│   ├── plots/            # Generated plots
+│   ├── negocio.pptx      # Business presentation
+│   └── ds.pptx           # Technical presentation
 ├── notebooks/
 │   ├── 01_Fuentes.ipynb
 │   ├── 02_LimpiezaEDA.ipynb
@@ -30,74 +30,145 @@ Analizamos y predecimos ventas de medicamentos usando modelos de Machine Learnin
 │   ├── generate_kpis.py
 │   └── plots.py
 ├── app_streamlit/
-│   └── app.py            # Dashboard interactivo
-│   └── requirements.txt  # Dependencias
+│   ├── app.py            # Interactive dashboard
+│   └── requirements.txt  # Dependencies
 ├── models/
-│   └── final_model.pkl   # Modelo entrenado
-├── memoria.md            # Informe técnico
+│   └── final_model.pkl   # Trained model
+├── memoria.md            # Technical report
 └── README.md
-```
 
----
-
-## ⚙️ Instalación y ejecución
-
-```bash
-# 1. Clonar repo
-git clone https://github.com/usuario/pharma-sales-forecasting.git
+# 1. Clone the repository
+git clone [https://github.com/YourUsername/pharma-sales-forecasting.git](https://github.com/YourUsername/pharma-sales-forecasting.git)
 cd pharma-sales-forecasting
 
-# 2. Crear entorno virtual y activar
+# 2. Create and activate a virtual environment
 python -m venv venv
-source venv/bin/activate  # en Windows: venv\Scripts\activate
+source venv/bin/activate  # on Windows: venv\Scripts\activate
 
-# 3. Instalar dependencias
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Procesar datos, entrenar y evaluar
+# 4. Process data, train, and evaluate
 python src/data_processing.py
 python src/training.py
 python src/evaluation.py
 
-# 5. Generar archivo KPIs
+# 5. Generate KPIs file
 python src/generate_kpis.py
 
-# 6. Lanzar dashboard
+# 6. Launch the dashboard
 streamlit run app_streamlit/app.py
+
+
+Here is the fully translated English version of your `README.md` file. You can copy the code block below and paste it directly over your current README file:
+
+```markdown
+# 💊 Pharma Sales Forecasting & Analytics  
+
+A Data Science project applied to the pharmaceutical sector.  
+We analyze and predict medication sales using Machine Learning models and time series forecasting, featuring interactive visualizations in Streamlit.  
+
+---
+
+## 📂 Repository Structure
+
+```plaintext
+├── data/
+│   ├── raw/              # Original data (Kaggle)
+│   ├── processed/        # Processed data
+│   ├── train/            # Training set
+│   └── test/             # Testing set
+├── docs/
+│   ├── artifacts/        # KPIs, rankings, metrics
+│   ├── plots/            # Generated plots
+│   ├── negocio.pptx      # Business presentation
+│   └── ds.pptx           # Technical presentation
+├── notebooks/
+│   ├── 01_Fuentes.ipynb
+│   ├── 02_LimpiezaEDA.ipynb
+│   └── 03_Entrenamiento_Evaluacion.ipynb
+├── src/
+│   ├── utils.py
+│   ├── data_processing.py
+│   ├── training.py
+│   ├── evaluation.py
+│   ├── generate_kpis.py
+│   └── plots.py
+├── app_streamlit/
+│   ├── app.py            # Interactive dashboard
+│   └── requirements.txt  # Dependencies
+├── models/
+│   └── final_model.pkl   # Trained model
+├── memoria.md            # Technical report
+└── README.md
+
 ```
 
 ---
 
-## 📊 Modelos implementados  
+## ⚙️ Installation and Execution
 
-- ARIMA y SARIMAX  
-- Random Forest  
-- Gradient Boosting  
-- XGBoost  
-- **CatBoost (ganador 🏆)**  
-- Clustering KMeans  
-- *(Prophet reservado para futuro)*  
+```bash
+# 1. Clone the repository
+git clone [https://github.com/YourUsername/pharma-sales-forecasting.git](https://github.com/YourUsername/pharma-sales-forecasting.git)
+cd pharma-sales-forecasting
+
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # on Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Process data, train, and evaluate
+python src/data_processing.py
+python src/training.py
+python src/evaluation.py
+
+# 5. Generate KPIs file
+python src/generate_kpis.py
+
+# 6. Launch the dashboard
+streamlit run app_streamlit/app.py
+
+```
 
 ---
 
+## 📊 Implemented Models
 
-## ✨ Resultados clave  
+* ARIMA and SARIMAX
+* Random Forest
+* Gradient Boosting
+* XGBoost
+* **CatBoost (Winner 🏆)** - KMeans Clustering
+* *(Prophet reserved for future work)* ---
 
-- MAPE < 2% en predicción de ventas (**CatBoost**).  
-- Identificación de categorías dominantes vía análisis de Pareto.  
-- Segmentación temporal y clustering para detectar patrones de consumo.  
-- Dashboard interactivo con filtros de granularidad, fechas y visualizaciones de negocio.  
+## ✨ Key Results
+
+* MAPE < 2% in sales forecasting (**CatBoost**).
+* Identification of dominant categories via Pareto analysis.
+* Temporal segmentation and clustering to detect consumption patterns.
+* Interactive dashboard with granularity filters, date ranges, and business visualizations.
 
 ---
 
-## 📌 Dataset  
+## 📌 Dataset
 
-[Kaggle: Pharma Sales Data](https://www.kaggle.com/datasets/milanzdravkovic/pharma-sales-data)  
+[Kaggle: Pharma Sales Data](https://www.kaggle.com/datasets/milanzdravkovic/pharma-sales-data)
 
 ---
 
+## 📜 License
 
-## 📜 Licencia  
+No license.
 
+```
 
-No license. 
+Once you save the file, simply add, commit, and push the changes to your repository just like you did in the earlier steps:
+```bash
+git add README.md
+git commit -m "Translate README to English"
+git push
+
+```
