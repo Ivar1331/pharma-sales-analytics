@@ -165,10 +165,3 @@ No license.
 
 ```
 
-Once you save the file, simply add, commit, and push the changes to your repository just like you did in the earlier steps:
-```bash
-git add README.md
-git commit -m "Translate README to English"
-git push
-
-```
